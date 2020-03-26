@@ -109,3 +109,12 @@ Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 0.3ms)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Loys Book"], ["description", "Welcome to my World"], ["created_at", "2020-03-26 15:27:39.137959"], ["updated_at", "2020-03-26 15:27:39.137959"]]
   [1m[35m (17.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts" for 23.119.203.21 at 2020-03-26 15:27:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 310ms (Views: 287.4ms | ActiveRecord: 1.0ms)
+
+
