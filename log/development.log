@@ -118,3 +118,11 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 310ms (Views: 287.4ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/posts" for 23.119.203.21 at 2020-03-26 15:29:03 +0000
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.8ms)
+
+
